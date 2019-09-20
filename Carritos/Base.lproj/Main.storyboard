@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Carritos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Bs-mr-W6n">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaCarrito" rowHeight="118" id="0HG-gq-Icu" customClass="CeldaCarritoController" customModule="Carritos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0HG-gq-Icu" id="ROx-Vl-WeU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="117.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFa-Hf-Fju">
+                                                    <rect key="frame" x="20" y="0.0" width="57" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-2Z-6KA">
+                                                    <rect key="frame" x="20" y="48" width="43" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he7-R1-mFD">
+                                                    <rect key="frame" x="337" y="48" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-Xb-ldf">
+                                                    <rect key="frame" x="20" y="86" width="48" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bfN-Xb-ldf" firstAttribute="leading" secondItem="ROx-Vl-WeU" secondAttribute="leadingMargin" id="9Yw-eS-Q52"/>
+                                                <constraint firstItem="bfN-Xb-ldf" firstAttribute="top" secondItem="eWY-2Z-6KA" secondAttribute="bottom" constant="17" id="DkI-Kh-gmt"/>
+                                                <constraint firstItem="oFa-Hf-Fju" firstAttribute="leading" secondItem="ROx-Vl-WeU" secondAttribute="leading" constant="20" id="GV1-sQ-nLh"/>
+                                                <constraint firstItem="he7-R1-mFD" firstAttribute="top" secondItem="ROx-Vl-WeU" secondAttribute="topMargin" constant="37" id="NCC-B3-eTl"/>
+                                                <constraint firstItem="bfN-Xb-ldf" firstAttribute="top" secondItem="eWY-2Z-6KA" secondAttribute="bottom" constant="17" id="QRe-Py-w6S"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="he7-R1-mFD" secondAttribute="bottom" constant="38" id="ml0-Jf-66L"/>
+                                                <constraint firstItem="eWY-2Z-6KA" firstAttribute="top" secondItem="oFa-Hf-Fju" secondAttribute="bottom" constant="19" id="rZE-wn-uMX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="he7-R1-mFD" secondAttribute="trailing" constant="26" id="s8Q-za-z7W"/>
+                                                <constraint firstItem="oFa-Hf-Fju" firstAttribute="top" secondItem="ROx-Vl-WeU" secondAttribute="top" id="xpm-MC-VCB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAño" destination="he7-R1-mFD" id="ziC-Hy-EtN"/>
+                                            <outlet property="lblCarro" destination="eWY-2Z-6KA" id="ndL-ob-dFF"/>
+                                            <outlet property="lblMarca" destination="bfN-Xb-ldf" id="sVH-RZ-WLt"/>
+                                            <outlet property="lblPlaca" destination="oFa-Hf-Fju" id="YJv-CC-yCq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="UDf-cy-GBC"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HI9-vm-L0w"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Bs-mr-W6n" secondAttribute="bottom" id="ePU-cJ-Zg7"/>
+                            <constraint firstItem="2Bs-mr-W6n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fdU-zp-AiX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Bs-mr-W6n" secondAttribute="trailing" id="o95-EX-HJ4"/>
+                            <constraint firstItem="2Bs-mr-W6n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tPJ-3H-Rft"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
